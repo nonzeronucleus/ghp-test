@@ -2,8 +2,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import counterActions from '../actions/counterActions';
-import Counter from '../components/Counter';
-
+import {Counter} from '../components';
 
 const mapDispatchToProps = (dispatch) => ({
     onAdd: bindActionCreators(counterActions.add,dispatch),
