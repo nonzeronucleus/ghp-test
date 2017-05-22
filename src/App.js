@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux'
 import reducers from './reducers';
+import Counter from './containers/Counter'
 import './App.css';
 
 let store = createStore(reducers,
@@ -13,12 +14,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <div className="App-header">
-            <h2>Welcome to My React Pages</h2>
-          </div>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
+          <Counter />
         </div>
       </Provider>
     );
