@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux'
 import reducers from './reducers';
-import Counter from './containers/Counter'
+import {CounterPage, AboutPage} from './components'
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
+
 import './App.css';
 
 let store = createStore(reducers,
@@ -14,7 +19,12 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <Counter />
+          <Router>
+            <div>
+              <Route exact path="/" component={CounterPage}/>
+              <Route exact path="/about" component={AboutPage}/>
+            </div>
+          </Router>
         </div>
       </Provider>
     );
