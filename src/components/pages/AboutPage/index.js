@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  Link
-} from 'react-router-dom'
 
-const AboutPage = () => (<div>About<Link to="/">Home</Link></div>);
+const AboutPage = () => (<div>About</div>);
 
 export default AboutPage;
