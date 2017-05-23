@@ -1,4 +1,4 @@
-import counterActionTypes from '../actions/counterActionTypes';
+import counterActionTypes from 'actions/counterActionTypes';
 
 const counter = (state = 0, action = {type:''} ) => {
     switch (action.type) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Counter from '../../../containers/Counter';
+import Counter from 'containers/Counter';
 import {
   Link
 } from 'react-router-dom'
