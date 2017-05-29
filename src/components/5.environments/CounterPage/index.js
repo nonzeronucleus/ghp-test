@@ -1,9 +1,9 @@
 import React from 'react';
-import Counter from 'containers/Counter';
+import {CounterContainer} from 'components';
 
 const CounterPage = () => (
     <div>
-        <Counter />
+        <CounterContainer />
     </div>
 );
 
