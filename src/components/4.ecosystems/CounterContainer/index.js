@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import counterActions from 'actions/counterActions';
+import {actions as counterActions} from 'state/counter';
 import {Counter} from 'components';
 
 const mapDispatchToProps = (dispatch) => ({

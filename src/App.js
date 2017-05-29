@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux'
-import reducers from 'reducers';
+import state from 'state';
 import {CounterPage, AboutPage, Nav} from 'components'
 import {
   BrowserRouter,
@@ -11,7 +11,7 @@ import {
 
 import './App.css';
 
-let store = createStore(reducers,
+let store = createStore(state,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
