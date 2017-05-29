@@ -183,11 +183,15 @@ module.exports = {
               use: [
                 {
                   loader: require.resolve('css-loader'),
-                  options: {
-                    importLoaders: 1,
-                    minimize: true,
-                    sourceMap: true,
-                  },
+                  // options: {
+                  //   importLoaders: 1,
+                  //   minimize: true,
+                  //   sourceMap: true,
+                  // },
+                  query: {
+                    modules: true,
+                    localIdentName: '[name]__[local]___[hash:base64:5]'
+                  }            
                 },
                 {
                   loader: require.resolve('postcss-loader'),
