@@ -9,7 +9,7 @@ import {
   Switch
 } from 'react-router-dom'
 
-import './App.css';
+import style from './App.css';
 
 let store = createStore(state,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <Provider store={store}>
           <BrowserRouter basename="/ghp-test">
-            <div className="App">
+            <div className={style.App}>
               <Nav />
               <Switch>
                 <Route exact path="/" component={CounterPage}/>
